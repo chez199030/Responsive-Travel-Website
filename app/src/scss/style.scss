@@ -40,6 +40,10 @@ html {
   &::-webkit-scrollbar-thumb {
     background: $black;
   }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 .header {
@@ -70,6 +74,12 @@ html {
         color: $green;
       }
     }
+    #nav-close {
+      font-size: 5rem;
+      cursor: pointer;
+      color: $black;
+      display: none;
+    }
   }
   .icons a,
   .icons div {
@@ -83,5 +93,66 @@ html {
   }
   #menu-btn {
     display: none;
+  }
+}
+
+//Media Queries
+@media (max-width: 75em) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 48em) {
+  .header {
+    #menu-btn {
+      display: inline-block;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: $white;
+      z-index: 10000;
+      width: 35rem;
+      height: 100%;
+
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      }
+
+      a {
+        margin: 1rem 0;
+        font-size: 3rem;
+      }
+      #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 29em) {
+  html {
+    font-size: 50%;
   }
 }
