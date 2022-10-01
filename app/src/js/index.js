@@ -1,8 +1,13 @@
-const h1 = document.querySelector("h1");
-const btnRed = document.querySelector(".btn-red");
+const navbar = document.querySelector(".header .navbar");
 
-console.log(h1);
+document.querySelector("#menu-btn").onclick = () => {
+  navbar.classList.add("active");
+};
 
-btnRed.addEventListener("click", function () {
-  h1.style.backgroundColor = "red";
-});
+document.querySelector("#nav-close").onclick = () => {
+  navbar.classList.remove("active");
+};
+
+window.onscroll = () => {
+  navbar.classList.remove("active");
+};

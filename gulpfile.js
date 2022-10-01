@@ -36,11 +36,13 @@ function htmlTask() {
 
 // Sass task: compiles the style.scss file into style.css
 function scssTask() {
-  return src(files.scssSrcPath, { sourcemaps: true }) // set source and turn on sourcemaps
-    .pipe(sass()) // compile SCSS to CSS
-    .pipe(purgecss({ content: ["app/src/**/*.html"] }))
-    .pipe(postcss([autoprefixer("last 2 versions"), cssnano()])) // PostCSS plugins
-    .pipe(dest("app/dist/css", { sourcemaps: "." })); // put final CSS in dist folder with sourcemap
+  return (
+    src(files.scssSrcPath, { sourcemaps: true }) // set source and turn on sourcemaps
+      .pipe(sass()) // compile SCSS to CSS
+      //.pipe(purgecss({ content: ["app/src/**/*.html"] }))
+      // .pipe(postcss([autoprefixer("last 2 versions"), cssnano()])) // PostCSS plugins
+      .pipe(dest("app/dist/css", { sourcemaps: "." }))
+  ); // put final CSS in dist folder with sourcemap
 }
 
 // JS task: concatenates and uglifies JS files to script.js
