@@ -16,7 +16,7 @@ $green: #219150;
 $black: #10221b;
 $white: #fff;
 $light-bg: #eee;
-$border: 2rem solid $black;
+$border: 0.2rem solid $black;
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
 @mixin grid($val) {
@@ -43,6 +43,25 @@ html {
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: $border;
+  color: $black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  &:hover {
+    background: $black;
+    color: $white;
   }
 }
 
@@ -156,10 +175,61 @@ html {
   }
 }
 
+// Home Section Starts
+
+.home {
+  padding: 0;
+
+  .box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+
+    &.box-1 {
+      background: url(/app/dist/img/home-bg-1.webp) no-repeat;
+    }
+    &.box-2 {
+      background: url(/app/dist/img/home-bg-2.webp) no-repeat;
+      justify-content: flex-start;
+    }
+    &.box-3 {
+      background: url(/app/dist/img/home-bg-3.webp) no-repeat;
+    }
+    .content {
+      width: 50rem;
+      span {
+        font-size: 4rem;
+        color: $black;
+      }
+      h3 {
+        font-size: 6rem;
+        color: $green;
+        padding-top: 0.5rem;
+        text-transform: uppercase;
+      }
+      p {
+        line-height: 2;
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+// Home Section Ends
+
 //Media Queries
 @media (max-width: 75em) {
   .header {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 

@@ -12,12 +12,15 @@ const cssnano = require("cssnano");
 const replace = require("gulp-replace");
 const browsersync = require("browser-sync").create();
 const htmlmin = require("gulp-htmlmin");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 
 // File paths
 const files = {
   scssSrcPath: "app/src/scss/**/*.scss",
   jsSrcPath: "app/src/js/**/*.js",
   htmlSrcPath: "app/src/**/*.html",
+  // imgSrcPath: "app/src/img/**/*",
 };
 
 //HTML minify
@@ -27,6 +30,31 @@ const files = {
 //     .pipe(htmlmin({ collapseWhitespace: true }))
 //     .pipe(gulp.dest("dist"));
 // });
+
+// function imgTask() {
+//   return src(files.imgSrcPath)
+//     .pipe(
+//       imagemin([
+//         imagemin.gifsicle({ interlaced: true }),
+//         imagemin.mozjpeg({ quality: 75, progressive: true }),
+//         imagemin.optipng({ optimizationLevel: 5 }),
+//         imagemin.svgo({
+//           plugins: [
+//             {
+//               name: "removeViewBox",
+//               active: true,
+//             },
+//             {
+//               name: "cleanupIDs",
+//               active: false,
+//             },
+//           ],
+//         }),
+//       ])
+//     )
+//     .pipe(webp())
+//     .pipe(dest("app/dist/img"));
+// }
 
 function htmlTask() {
   return src(files.htmlSrcPath)

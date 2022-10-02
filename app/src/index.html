@@ -10,7 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="/app/dist/css/style.css?cb=1664272732327" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script
       defer
       type="module"
@@ -34,18 +41,78 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <a href="" class="fas fa-shopping-cart"></a>
         <div id="search-btn" class="fas fa-search"></div>
+      </div>
     </header>
     <!-- header section ends -->
-
-    <!-- Search From -->
+    <!-- Search Form -->
     <div class="search-form">
-
       <div id="close-search" class="fas fa-times"></div>
       <form action="">
-        <input type="search" name="" placeholder="search here..." id="search-box">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
         <label for="search-box" class="fas fa-search"></label>
       </form>
     </div>
-     <!-- Search From -->
+    <!-- Search Form -->
+
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="box box-1">
+              <div class="content">
+                <span>never stop</span>
+                <h3>exploring</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                  deleniti tempora iusto reiciendis delectus? Cupiditate cumque
+                  maiores dicta dolore explicabo.
+                </p>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="box box-2">
+              <div class="content">
+                <span>make tour</span>
+                <h3>amazing</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                  deleniti tempora iusto reiciendis delectus? Cupiditate cumque
+                  maiores dicta dolore explicabo.
+                </p>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="box box-3">
+              <div class="content">
+                <span>exploring</span>
+                <h3>new world</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                  deleniti tempora iusto reiciendis delectus? Cupiditate cumque
+                  maiores dicta dolore explicabo.
+                </p>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section Ends -->
   </body>
 </html>
