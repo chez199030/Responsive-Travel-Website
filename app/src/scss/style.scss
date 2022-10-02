@@ -65,6 +65,15 @@ section {
   }
 }
 
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: $black;
+  margin-bottom: 2.5rem;
+}
+
+// Header Section Starts
+
 .header {
   position: fixed;
   top: 0;
@@ -74,6 +83,10 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
+  &.active {
+    background: $white;
+    box-shadow: $box-shadow;
+  }
 
   .logo {
     margin-right: auto;
@@ -175,6 +188,8 @@ section {
   }
 }
 
+// Header Section Ends
+
 // Home Section Starts
 
 .home {
@@ -225,6 +240,35 @@ section {
   font-size: 3rem;
   color: $black;
 }
+
+//Category Seciont Starts
+.category {
+  .box-container {
+    @include grid(29rem);
+    .box {
+      text-align: center;
+      padding: 1rem;
+      img {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+//Category Seciont Ends
 
 // Home Section Ends
 
