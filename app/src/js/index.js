@@ -31,13 +31,10 @@ const swiper = new Swiper(".home-slider", {
     enabled: true,
   },
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+    delay: 5000,
+    disableOnInteraction: true,
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

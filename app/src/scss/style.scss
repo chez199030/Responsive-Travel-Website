@@ -220,6 +220,11 @@ section {
     }
   }
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: $black;
+}
 
 // Home Section Ends
 
@@ -236,6 +241,25 @@ section {
 @media (max-width: 62em) {
   html {
     font-size: 55%;
+  }
+  .home .box {
+    padding: 2rem;
+    justify-content: center;
+    background-position: right !important;
+
+    &.box-2 {
+      justify-content: center;
+      background-position: left !important;
+    }
+    .content {
+      text-align: center;
+      span {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 4rem;
+      }
+    }
   }
 }
 
@@ -280,6 +304,10 @@ section {
         right: 2rem;
       }
     }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
   }
 }
 
