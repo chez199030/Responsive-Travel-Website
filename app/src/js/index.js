@@ -36,9 +36,9 @@ window.onload = () => {
   }
 };
 
-// Initialize Swiper
+// Home Slider - Swiper
 
-const swiper = new Swiper(".home-slider", {
+var swiper = new Swiper(".home-slider", {
   grabCursor: true,
   loop: true,
   keyboard: {
@@ -52,5 +52,35 @@ const swiper = new Swiper(".home-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+// Home Slider - Swiper
+
+var swiper = new Swiper(".product-slider", {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 20,
+  keyboard: {
+    enabled: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });
