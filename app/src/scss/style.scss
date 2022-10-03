@@ -432,6 +432,9 @@ section {
 
 //Reviews Section starts
 .reviews {
+  .wrapper {
+    padding-bottom: 6rem;
+  }
   .slide {
     .text {
       padding: 2rem;
@@ -476,6 +479,20 @@ section {
       }
     }
   }
+  // .swiper-pagination {
+  //   .swiper-pagination-bullet {
+  //     width: var(
+  //       --swiper-pagination-bullet-width,
+  //       var(--swiper-pagination-bullet-size, 1rem)
+  //     );
+  //     height: var(
+  //       --swiper-pagination-bullet-width,
+  //       var(--swiper-pagination-bullet-size, 1rem)
+  //     );
+  //   }
+
+  //   --swiper-theme-color: #10221b;
+  // }
 }
 //Reviews Section ends
 
@@ -527,6 +544,52 @@ section {
   }
 }
 //Services Section ends
+
+//Blogs  Section starts
+.blogs {
+  .slide {
+    padding: 2rem;
+    text-align: center;
+    img {
+      height: 25rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    .icons {
+      background: $black;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      position: relative;
+      top: -2rem;
+      display: inline-block;
+
+      a {
+        font-size: 1.4rem;
+        color: $white;
+        margin: 0 1rem;
+        &:hover {
+          color: $green;
+        }
+        i {
+          padding-right: 0.5rem;
+          color: $green;
+        }
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      color: $black;
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      line-height: 2;
+      color: $black;
+    }
+  }
+}
+//Blogs Section ends
 
 //Media Queries
 @media (max-width: 75em) {

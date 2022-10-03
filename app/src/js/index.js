@@ -100,11 +100,11 @@ var swiper = new Swiper(".review-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   dynamicBullets: true,
+  //   clickable: true,
+  // },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -113,6 +113,35 @@ var swiper = new Swiper(".review-slider", {
       slidesPerView: 2,
     },
     768: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".blog-slider", {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 10,
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
       slidesPerView: 3,
     },
   },
