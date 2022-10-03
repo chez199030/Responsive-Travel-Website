@@ -240,8 +240,8 @@ section {
   font-size: 3rem;
   color: $black;
 }
-
-//Category Seciont Starts
+// Home Section Ends
+//Category Section Starts
 .category {
   .box-container {
     @include grid(29rem);
@@ -268,9 +268,41 @@ section {
   }
 }
 
-//Category Seciont Ends
+//Category Section Ends
+//About Section Starts
 
-// Home Section Ends
+.about {
+  background: $light-bg;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .image {
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+    img {
+      width: 100%;
+      box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  .content {
+    flex: 1 1 42rem;
+
+    h3 {
+      font-size: 3rem;
+      color: $green;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      padding: 2rem 0;
+      color: $black;
+    }
+  }
+}
+//About Section Ends
 
 //Media Queries
 @media (max-width: 75em) {
@@ -285,6 +317,7 @@ section {
 @media (max-width: 62em) {
   html {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
   .home .box {
     padding: 2rem;

@@ -46,7 +46,7 @@ const swiper = new Swiper(".home-slider", {
   },
   autoplay: {
     delay: 5000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
 
   navigation: {
