@@ -84,3 +84,36 @@ var swiper = new Swiper(".product-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".review-slider", {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 20,
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
