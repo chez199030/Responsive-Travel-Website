@@ -591,6 +591,51 @@ section {
 }
 //Blogs Section ends
 
+//Newsletter Section starts
+.newsletter {
+  background: $light-bg;
+  .content {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2;
+      color: $black;
+    }
+    form {
+      margin-top: 2rem;
+      background: $white;
+      border-radius: 5rem;
+      padding: 0.7rem;
+      border: $border;
+      display: flex;
+
+      .email {
+        width: 100%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: $black;
+        padding: 0 1.3rem;
+      }
+      .btn {
+        margin-top: 0;
+        border-radius: 5rem;
+        background: $black;
+        color: $white;
+        &:hover {
+          background: $green;
+          color: $white;
+          border: 2px solid $green;
+        }
+      }
+    }
+  }
+}
+//Newsletter Section ends
+
 //Media Queries
 @media (max-width: 75em) {
   .header {
