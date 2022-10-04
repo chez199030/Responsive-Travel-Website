@@ -636,6 +636,17 @@ section {
 }
 //Newsletter Section ends
 
+//Clients Section starts
+.clients {
+  .slide {
+    text-align: center;
+    img {
+      height: 12rem;
+    }
+  }
+}
+//Clients Section ends
+
 //Media Queries
 @media (max-width: 75em) {
   .header {

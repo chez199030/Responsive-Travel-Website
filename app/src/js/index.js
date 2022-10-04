@@ -65,6 +65,11 @@ var swiper = new Swiper(".product-slider", {
     enabled: true,
   },
 
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -118,8 +123,7 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
-var swiper = new Swiper(".blog-slider", {
-  grabCursor: true,
+var swiper4 = new Swiper(".blog-slider", {
   loop: true,
   spaceBetween: 10,
   keyboard: {
@@ -138,11 +142,43 @@ var swiper = new Swiper(".blog-slider", {
     0: {
       slidesPerView: 1,
     },
-    768: {
+    640: {
       slidesPerView: 2,
     },
-    991: {
+    768: {
       slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+var swiper = new Swiper(".client-slider", {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 10,
+  keyboard: {
+    enabled: true,
+  },
+
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
     },
   },
 });
