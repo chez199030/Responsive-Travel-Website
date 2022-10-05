@@ -647,6 +647,57 @@ section {
 }
 //Clients Section ends
 
+//Footer Section starts
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/app/dist/img/footer-bg.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      h3 {
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+      a {
+        display: block;
+        font-size: 1.4rem;
+        color: $white;
+        padding: 1rem 0;
+
+        i {
+          color: $green;
+          padding: 0.5rem;
+        }
+        &:hover {
+          color: $green;
+          i {
+            padding-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  .created {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: $white;
+
+    span {
+      color: $green;
+    }
+  }
+}
+//Footer Section ends
+
 //Media Queries
 @media (max-width: 75em) {
   .header {
